@@ -1,51 +1,48 @@
 /* BackTalk_Grid.scss */
-.column {
-  margin: 0px 10px 0px 10px; }
+.col-1 {
+  width: 64px*1 - 20px; }
 
-.one {
-  width: 44px; }
+.col-2 {
+  width: 64px*2 - 20px; }
 
-.two {
-  width: 108px; }
+.col-3 {
+  width: 64px*3 - 20px; }
 
-.three {
-  width: 172px; }
+.col-4 {
+  width: 64px*4 - 20px; }
 
-.four {
-  width: 236px; }
+.col-5 {
+  width: 64px*5 - 20px; }
 
-.five {
-  width: 300px; }
+.col-6 {
+  width: 64px*6 - 20px; }
 
-.six {
-  width: 364px; }
+.col-7 {
+  width: 64px*7 - 20px; }
 
-.seven {
-  width: 428px; }
+.col-8 {
+  width: 64px*8 - 20px; }
 
-.eight {
-  width: 492px; }
+.col-9 {
+  width: 64px*9 - 20px; }
 
-.nine {
-  width: 556px; }
+.col-10 {
+  width: 64px*10 - 20px; }
 
-.ten {
-  width: 620px; }
+.col-11 {
+  width: 64px*11 - 20px; }
 
-.eleven {
-  width: 684px; }
+.col-12 {
+  width: 64px*12 - 20px; }
 
-.twelve {
-  width: 748px; }
+.col-13 {
+  width: 64px*13 - 20px; }
 
-.thirteen {
-  width: 812px; }
+.col-14 {
+  width: 64px*14 - 20px; }
 
-.fourteen {
-  width: 876px; }
+.col-15 {
+  width: 64px*15 - 20px; }
 
-.fifteen {
-  width: 940px; }
-
-.sixteen {
-  width: 1004px; }
+.col-16 {
+  width: 64px*16 - 20px; }
