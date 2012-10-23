@@ -9,7 +9,12 @@ $cols:16;
 	margin:$margin;
 }
 
+.columns{
+	@include margins;
+}
+
 @for $i from 1 through $cols {
-  .col-#{$i} { width: #{$full_width/$cols*#{$i}  -  $margin_space}
+  .span-#{$i}.columns { width: #{$full_width/$cols*#{$i}  -  $margin_space}
 
   }}
+

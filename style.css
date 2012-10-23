@@ -1,48 +1,51 @@
 /* BackTalk_Grid.scss */
-.col-1 {
+.columns {
+  margin: 0px 10px 0px 10px; }
+
+.span-1.columns {
   width: 64px*1 - 20px; }
 
-.col-2 {
+.span-2.columns {
   width: 64px*2 - 20px; }
 
-.col-3 {
+.span-3.columns {
   width: 64px*3 - 20px; }
 
-.col-4 {
+.span-4.columns {
   width: 64px*4 - 20px; }
 
-.col-5 {
+.span-5.columns {
   width: 64px*5 - 20px; }
 
-.col-6 {
+.span-6.columns {
   width: 64px*6 - 20px; }
 
-.col-7 {
+.span-7.columns {
   width: 64px*7 - 20px; }
 
-.col-8 {
+.span-8.columns {
   width: 64px*8 - 20px; }
 
-.col-9 {
+.span-9.columns {
   width: 64px*9 - 20px; }
 
-.col-10 {
+.span-10.columns {
   width: 64px*10 - 20px; }
 
-.col-11 {
+.span-11.columns {
   width: 64px*11 - 20px; }
 
-.col-12 {
+.span-12.columns {
   width: 64px*12 - 20px; }
 
-.col-13 {
+.span-13.columns {
   width: 64px*13 - 20px; }
 
-.col-14 {
+.span-14.columns {
   width: 64px*14 - 20px; }
 
-.col-15 {
+.span-15.columns {
   width: 64px*15 - 20px; }
 
-.col-16 {
+.span-16.columns {
   width: 64px*16 - 20px; }
