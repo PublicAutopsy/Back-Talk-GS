@@ -1,20 +1,24 @@
 /* BackTalk_Grid.scss */
 
-$full_width:1024px;
-$margin_space:20px;
-$cols:16;
+$full_width:960px;
+$margin_space:20;
+$cols:8;
 
 @mixin margins{
-	$margin: 0px $margin_space/2 0px $margin_space/2;
+	$margin: 0px #{$margin_space/2}px 0px #{$margin_space/2}px;
 	margin:$margin;
 }
 
 .columns{
 	@include margins;
 }
+.container{
+	width:$full_width;
+}
 
 @for $i from 1 through $cols {
-  .span-#{$i}.columns { width: #{$full_width/$cols*#{$i}  -  $margin_space}
+	$col_width: $full_width/$cols*$i  -  $margin_space;
+  .span-#{$i}.columns { width: #{$col_width}
 
   }}
 

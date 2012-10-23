@@ -2,50 +2,29 @@
 .columns {
   margin: 0px 10px 0px 10px; }
 
+.container {
+  width: 960px; }
+
 .span-1.columns {
-  width: 64px*1 - 20px; }
+  width: 100px; }
 
 .span-2.columns {
-  width: 64px*2 - 20px; }
+  width: 220px; }
 
 .span-3.columns {
-  width: 64px*3 - 20px; }
+  width: 340px; }
 
 .span-4.columns {
-  width: 64px*4 - 20px; }
+  width: 460px; }
 
 .span-5.columns {
-  width: 64px*5 - 20px; }
+  width: 580px; }
 
 .span-6.columns {
-  width: 64px*6 - 20px; }
+  width: 700px; }
 
 .span-7.columns {
-  width: 64px*7 - 20px; }
+  width: 820px; }
 
 .span-8.columns {
-  width: 64px*8 - 20px; }
-
-.span-9.columns {
-  width: 64px*9 - 20px; }
-
-.span-10.columns {
-  width: 64px*10 - 20px; }
-
-.span-11.columns {
-  width: 64px*11 - 20px; }
-
-.span-12.columns {
-  width: 64px*12 - 20px; }
-
-.span-13.columns {
-  width: 64px*13 - 20px; }
-
-.span-14.columns {
-  width: 64px*14 - 20px; }
-
-.span-15.columns {
-  width: 64px*15 - 20px; }
-
-.span-16.columns {
-  width: 64px*16 - 20px; }
+  width: 940px; }
