@@ -1,0 +1,82 @@
+/* BackTalk_Grid.scss */
+
+$full_width:1024px;
+$margin_space:20px;
+$cols:16;
+
+@mixin margins{
+	$margin: 0px $margin_space/2 0px $margin_space/2;
+	margin:$margin;
+}
+
+
+
+$one_column       :$full_width/$cols  -  $margin_space;
+$two_column       :$full_width/$cols*2 - $margin_space;
+$three_column     :$full_width/$cols*3 - $margin_space;
+$four_column      :$full_width/$cols*4 - $margin_space;
+$five_column      :$full_width/$cols*5 - $margin_space;
+$six_column       :$full_width/$cols*6 - $margin_space;
+$seven_column     :$full_width/$cols*7 - $margin_space;
+$eight_column     :$full_width/$cols*8 - $margin_space;
+$nine_column      :$full_width/$cols*9 - $margin_space;
+$ten_column       :$full_width/$cols*10- $margin_space;
+$eleven_column    :$full_width/$cols*11- $margin_space;
+$twelve_column    :$full_width/$cols*12- $margin_space;
+$thirteen_column  :$full_width/$cols*13- $margin_space;
+$fourteen_column  :$full_width/$cols*14- $margin_space;
+$fifteen_column   :$full_width/$cols*15- $margin_space;
+$sixteen_column   :$full_width         - $margin_space;
+
+.column{
+	@include margins;
+}
+
+.one{
+	width:$one_column;
+}
+.two{
+	width:$two_column;
+}
+.three{
+	width:$three_column;
+}
+.four{
+	width:$four_column;
+}
+.five{
+	width:$five_column;
+}
+.six{
+	width:$six_column;
+}
+.seven{
+	width:$seven_column;
+}
+.eight{
+	width:$eight_column;
+}
+.nine{
+	width:$nine_column;
+}
+.ten{
+	width:$ten_column;
+}
+.eleven{
+	width:$eleven_column;
+}
+.twelve{
+	width:$twelve_column;
+}
+.thirteen{
+	width:$thirteen_column;
+}
+.fourteen{
+	width:$fourteen_column;
+}
+.fifteen{
+	width:$fifteen_column;
+}
+.sixteen{
+	width:$sixteen_column;
+}

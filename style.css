@@ -1,0 +1,51 @@
+/* BackTalk_Grid.scss */
+.column {
+  margin: 0px 10px 0px 10px; }
+
+.one {
+  width: 44px; }
+
+.two {
+  width: 108px; }
+
+.three {
+  width: 172px; }
+
+.four {
+  width: 236px; }
+
+.five {
+  width: 300px; }
+
+.six {
+  width: 364px; }
+
+.seven {
+  width: 428px; }
+
+.eight {
+  width: 492px; }
+
+.nine {
+  width: 556px; }
+
+.ten {
+  width: 620px; }
+
+.eleven {
+  width: 684px; }
+
+.twelve {
+  width: 748px; }
+
+.thirteen {
+  width: 812px; }
+
+.fourteen {
+  width: 876px; }
+
+.fifteen {
+  width: 940px; }
+
+.sixteen {
+  width: 1004px; }
