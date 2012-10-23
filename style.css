@@ -3,28 +3,53 @@
   margin: 0px 10px 0px 10px; }
 
 .container {
-  width: 960px; }
+  width: 960px;
+  margin: 0 auto; }
 
 .span-1.columns {
-  width: 100px; }
+  width: 40px; }
 
 .span-2.columns {
-  width: 220px; }
+  width: 100px; }
 
 .span-3.columns {
-  width: 340px; }
+  width: 160px; }
 
 .span-4.columns {
-  width: 460px; }
+  width: 220px; }
 
 .span-5.columns {
-  width: 580px; }
+  width: 280px; }
 
 .span-6.columns {
-  width: 700px; }
+  width: 340px; }
 
 .span-7.columns {
-  width: 820px; }
+  width: 400px; }
 
 .span-8.columns {
+  width: 460px; }
+
+.span-9.columns {
+  width: 520px; }
+
+.span-10.columns {
+  width: 580px; }
+
+.span-11.columns {
+  width: 640px; }
+
+.span-12.columns {
+  width: 700px; }
+
+.span-13.columns {
+  width: 760px; }
+
+.span-14.columns {
+  width: 820px; }
+
+.span-15.columns {
+  width: 880px; }
+
+.span-16.columns {
   width: 940px; }

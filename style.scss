@@ -2,7 +2,7 @@
 
 $full_width:960px;
 $margin_space:20;
-$cols:8;
+$cols:16;
 
 @mixin margins{
 	$margin: 0px #{$margin_space/2}px 0px #{$margin_space/2}px;
@@ -14,6 +14,7 @@ $cols:8;
 }
 .container{
 	width:$full_width;
+	margin:0 auto;
 }
 
 @for $i from 1 through $cols {
