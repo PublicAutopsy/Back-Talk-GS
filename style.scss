@@ -2,16 +2,37 @@
 $full_width:960px;
 $margin_space:20;
 $cols:16;
+
 @mixin margins{
 	$margin: 0px #{$margin_space/2}px 0px #{$margin_space/2}px;
 	margin:$margin;
 }
+
+@mixin respond-to($media) {
+  @if $media == phone_portrait {
+    @media only screen and (max-width: 479px) { @content; }
+  }
+  @else if $media == phone_landscape {
+    @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
+  }
+  @else if $media == all_mobile {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+  @else if $media == tablet_portrait {
+    @media only screen and (min-width: 768px) and (max-width: 959px) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: 960px) { @content; }
+  }
+}
+
 .container{
 	width:$full_width;
 	margin:auto;
 }
 .columns{
 	@include margins;
+	@include respond-to(all_mobile){float:none;}
 	float:left;
 }
 .alpha{
@@ -22,36 +43,26 @@ $cols:16;
 }
 @for $i from 1 through $cols {
 	$col_width: $full_width/$cols*$i  -  $margin_space;
-  .container.span-#{$i}.columns { width: #{$col_width}
+  .container.span-#{$i}.columns { 
+  		width: #{$col_width};
+  		@include respond-to(phone_portrait) { 
+				$col_width: 300/$cols*$i  -  $margin_space;
+  				.container.span-#{$i}.columns { width: 300px;
+  				}
+  		}
+  		@include respond-to(phone_landscape) { 
+
+  				$col_width: 480/$cols*$i  -  $margin_space;
+  				.container.span-#{$i}.columns { width: 420px;
+  				}
+  		}
+  		@include respond-to(tablet_portrait) {
+  				$col_width: 768/$cols*$i  -  $margin_space;
+  				.container.span-#{$i}.columns { width: #{$col_width};
+  				}
+  		}
+  		@include respond-to(desktop) { width: 100% ;}
   }
 }
-@media only screen and (min-width: 960px){
 
-}
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-@for $i from 1 through $cols {
-		$col_width: 768/$cols*$i  -  $margin_space;
-  		.container.span-#{$i}.columns { width: #{$col_width}
-  		}
-	}
-}
-@media only screen and (max-width: 767px) {
-	.columns{
-		float:none;
-	}
-}
-@media only screen and (min-width: 480px) and (max-width: 767px){
-@for $i from 1 through $cols {
-		$col_width: 480/$cols*$i  -  $margin_space;
-  		.container.span-#{$i}.columns { width: 420px;
-  		}
-	}
-}
-@media only screen and (max-width: 479px){
-@for $i from 1 through $cols {
-		$col_width: 300/$cols*$i  -  $margin_space;
-  		.container.span-#{$i}.columns { width: 300px;
-  		}
-	}
-}
