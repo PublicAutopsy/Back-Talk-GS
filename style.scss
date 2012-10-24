@@ -1,5 +1,4 @@
 /* BackTalk_Grid.scss */
-
 $full_width:960px;
 $margin_space:20;
 $cols:16;
@@ -38,7 +37,11 @@ $phone_Landscape: "only screen and (min-width: 480px) and (max-width: 767px)";
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-
+@for $i from 1 through $cols {
+	$col_width: 768/$cols*$i  -  $margin_space;
+  .container.span-#{$i}.columns { width: #{$col_width}
+  }
+}
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
 	

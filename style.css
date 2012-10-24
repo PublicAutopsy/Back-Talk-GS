@@ -60,3 +60,52 @@
 
 .container.span-16.columns {
   width: 940px; }
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container.span-1.columns {
+    width: 28; }
+
+  .container.span-2.columns {
+    width: 76; }
+
+  .container.span-3.columns {
+    width: 124; }
+
+  .container.span-4.columns {
+    width: 172; }
+
+  .container.span-5.columns {
+    width: 220; }
+
+  .container.span-6.columns {
+    width: 268; }
+
+  .container.span-7.columns {
+    width: 316; }
+
+  .container.span-8.columns {
+    width: 364; }
+
+  .container.span-9.columns {
+    width: 412; }
+
+  .container.span-10.columns {
+    width: 460; }
+
+  .container.span-11.columns {
+    width: 508; }
+
+  .container.span-12.columns {
+    width: 556; }
+
+  .container.span-13.columns {
+    width: 604; }
+
+  .container.span-14.columns {
+    width: 652; }
+
+  .container.span-15.columns {
+    width: 700; }
+
+  .container.span-16.columns {
+    width: 748; } }
