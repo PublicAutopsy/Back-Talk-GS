@@ -2,18 +2,10 @@
 $full_width:960px;
 $margin_space:20;
 $cols:16;
-
-$desktop_Standard:"only screen and (min-width: 960px)";
-$tablet_Portrait: "only screen and (min-width: 768px) and (max-width: 959px)";
-$phone_Portrait:  "only screen and (min-width: 480px) and (max-width: 767px)";
-$phone_Landscape: "only screen and (min-width: 480px) and (max-width: 767px)";
-
 @mixin margins{
 	$margin: 0px #{$margin_space/2}px 0px #{$margin_space/2}px;
 	margin:$margin;
 }
-
-
 .container{
 	width:$full_width;
 	margin:auto;
@@ -28,24 +20,38 @@ $phone_Landscape: "only screen and (min-width: 480px) and (max-width: 767px)";
 .omega{
 	margin: 0px 0px 0px #{$margin_space}px !important;
 }
-
-
 @for $i from 1 through $cols {
 	$col_width: $full_width/$cols*$i  -  $margin_space;
   .container.span-#{$i}.columns { width: #{$col_width}
   }
 }
+@media only screen and (min-width: 960px){
+
+}
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 @for $i from 1 through $cols {
-	$col_width: 768/$cols*$i  -  $margin_space;
-  .container.span-#{$i}.columns { width: #{$col_width}
-  }
+		$col_width: 768/$cols*$i  -  $margin_space;
+  		.container.span-#{$i}.columns { width: #{$col_width}
+  		}
+	}
 }
+@media only screen and (max-width: 767px) {
+	.columns{
+		float:none;
+	}
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
-	
+@for $i from 1 through $cols {
+		$col_width: 480/$cols*$i  -  $margin_space;
+  		.container.span-#{$i}.columns { width: 420px;
+  		}
+	}
 }
-@media only screen and (min-width: 480px) and (max-width: 767px){
-	
+@media only screen and (max-width: 479px){
+@for $i from 1 through $cols {
+		$col_width: 300/$cols*$i  -  $margin_space;
+  		.container.span-#{$i}.columns { width: 300px;
+  		}
+	}
 }
