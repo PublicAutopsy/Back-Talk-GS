@@ -4,22 +4,46 @@ $full_width:960px;
 $margin_space:20;
 $cols:16;
 
+$desktop_Standard:"only screen and (min-width: 960px)";
+$tablet_Portrait: "only screen and (min-width: 768px) and (max-width: 959px)";
+$phone_Portrait:  "only screen and (min-width: 480px) and (max-width: 767px)";
+$phone_Landscape: "only screen and (min-width: 480px) and (max-width: 767px)";
+
 @mixin margins{
 	$margin: 0px #{$margin_space/2}px 0px #{$margin_space/2}px;
 	margin:$margin;
 }
 
-.columns{
-	@include margins;
-}
+
 .container{
 	width:$full_width;
-	margin:0 auto;
+	margin:auto;
 }
+.columns{
+	@include margins;
+	float:left;
+}
+.alpha{
+	margin: 0px #{$margin_space}px 0px 0px !important;
+}
+.omega{
+	margin: 0px 0px 0px #{$margin_space}px !important;
+}
+
 
 @for $i from 1 through $cols {
 	$col_width: $full_width/$cols*$i  -  $margin_space;
-  .span-#{$i}.columns { width: #{$col_width}
+  .container.span-#{$i}.columns { width: #{$col_width}
+  }
+}
 
-  }}
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	
+}

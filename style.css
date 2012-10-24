@@ -1,55 +1,62 @@
 /* BackTalk_Grid.scss */
-.columns {
-  margin: 0px 10px 0px 10px; }
-
 .container {
   width: 960px;
-  margin: 0 auto; }
+  margin: auto; }
 
-.span-1.columns {
+.columns {
+  margin: 0px 10px 0px 10px;
+  float: left; }
+
+.alpha {
+  margin: 0px 20px 0px 0px !important; }
+
+.omega {
+  margin: 0px 0px 0px 20px !important; }
+
+.container.span-1.columns {
   width: 40px; }
 
-.span-2.columns {
+.container.span-2.columns {
   width: 100px; }
 
-.span-3.columns {
+.container.span-3.columns {
   width: 160px; }
 
-.span-4.columns {
+.container.span-4.columns {
   width: 220px; }
 
-.span-5.columns {
+.container.span-5.columns {
   width: 280px; }
 
-.span-6.columns {
+.container.span-6.columns {
   width: 340px; }
 
-.span-7.columns {
+.container.span-7.columns {
   width: 400px; }
 
-.span-8.columns {
+.container.span-8.columns {
   width: 460px; }
 
-.span-9.columns {
+.container.span-9.columns {
   width: 520px; }
 
-.span-10.columns {
+.container.span-10.columns {
   width: 580px; }
 
-.span-11.columns {
+.container.span-11.columns {
   width: 640px; }
 
-.span-12.columns {
+.container.span-12.columns {
   width: 700px; }
 
-.span-13.columns {
+.container.span-13.columns {
   width: 760px; }
 
-.span-14.columns {
+.container.span-14.columns {
   width: 820px; }
 
-.span-15.columns {
+.container.span-15.columns {
   width: 880px; }
 
-.span-16.columns {
+.container.span-16.columns {
   width: 940px; }
