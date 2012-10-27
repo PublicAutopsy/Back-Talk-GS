@@ -80,7 +80,7 @@ $cols:16;
 }
 @for $i from 1 through $cols {
 	$col_width: $full_width/$cols*$i  -  $margin_space;
-  .container.span-#{$i}.columns { 
+  .container .span-#{$i}.columns { 
   		width: #{$col_width};
   		@include respond-to(phone_portrait) { 
 				$col_width: 300/$cols*$i  -  $margin_space;
@@ -95,9 +95,8 @@ $cols:16;
   		}
   		@include respond-to(tablet_portrait) {
   				$col_width: 768/$cols*$i  -  $margin_space;
-  				.container.span-#{$i}.columns { width: #{$col_width};
+  				.container.span-#{$i}.columns { width: #{$col_width}px;
   				}
   		}
-  		@include respond-to(desktop) { width: 100% ;}
   }
 }  
