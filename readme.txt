@@ -1,1 +1,1 @@
-TalkBack Grid is a SASS based grid system that enables you to change the amount of columns and the width of the entire working space with simple value changes. 
+Back Talk GS is a SASS based grid system that enables you to change the amount of columns and the width of the entire working space with simple value changes. 
