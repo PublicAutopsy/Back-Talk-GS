@@ -66,7 +66,7 @@ $cols:16;
 }
 .columns{
 	@include margins;
-	@include respond-to(all_mobile){float:none;}
+	@include respond-to(all_mobile){float:none;margin:auto;}
 	float:left;
 }
 .alpha{
@@ -80,23 +80,17 @@ $cols:16;
 }
 @for $i from 1 through $cols {
 	$col_width: $full_width/$cols*$i  -  $margin_space;
-  .container .span-#{$i}.columns { 
+  .container .span-#{$i}.columns {
   		width: #{$col_width};
   		@include respond-to(phone_portrait) { 
-				$col_width: 300/$cols*$i  -  $margin_space;
-  				.container.span-#{$i}.columns { width: 300px;
-  				}
+          width: 300px;
   		}
   		@include respond-to(phone_landscape) { 
-
-  				$col_width: 480/$cols*$i  -  $margin_space;
-  				.container.span-#{$i}.columns { width: 420px;
-  				}
+           width: 420px;
   		}
   		@include respond-to(tablet_portrait) {
   				$col_width: 768/$cols*$i  -  $margin_space;
-  				.container.span-#{$i}.columns { width: #{$col_width}px;
-  				}
+  			  width: #{$col_width}px;
   		}
   }
-}  
+}
