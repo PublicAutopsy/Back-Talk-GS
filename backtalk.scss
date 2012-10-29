@@ -12,7 +12,8 @@ $phone_portrait_size: $phone_landscape_size - 1;
 //Mobile Columns Sizes 
 $phone_landscape_col:420px;
 $phone_portrait_col:300px;
-
+//Responsive?
+$responsive: true !default;
 
 //Sets the margin space for each Side of the columns unit 
 @mixin margins{
@@ -42,28 +43,38 @@ $phone_portrait_col:300px;
 .container{
 	width:$full_width;
 	margin:auto;
+  @if $responsive {
 	@include respond-to(desktop) {widows: #{$full_width}}
 	@include respond-to(tablet_portrait) {width: #{$tablet_portrait_size}}
 	@include respond-to(phone_landscape) {width: #{$phone_landscape_size}}
 	@include respond-to(phone_portrait) {width: 320px;}
 }
+}
 .columns{
 	@include margins;
+  @if $responsive {
 	@include respond-to(all_mobile){float:none;margin-left:auto;margin-right:auto;}
+}
 	float:left;
 }
 .alpha{
-	@include respond-to(desktop){margin-right:#{$margin_space}px !important;}
-	@include respond-to(tablet_portrait){margin-right: #{$margin_space}px !important;}
+  margin-right:#{$margin_space}px !important;
+  margin-left: 0px;
+  @if $responsive {
+	@include respond-to(all_mobile){margin-left:auto;margin-right: auto;}
+}
 }
 .omega{
-	
-	@include respond-to(desktop){margin-left: #{$margin_space}px !important;}
-	@include respond-to(tablet_portrait){margin-left:#{$margin_space}px !important;}
+margin-left: #{$margin_space}px !important;
+margin-right: 0px;
+  @if $responsive {
+	@include respond-to(all_mobile){margin-left:auto;margin-right: auto;}
+}
 }
 
 .container .one-third.columns{
   width: $full_width/3 - $margin_space;
+  @if $responsive {
       @include respond-to(phone_portrait) { 
           width: #{$phone_portrait_col};
       }
@@ -73,9 +84,11 @@ $phone_portrait_col:300px;
       @include respond-to(tablet_portrait) {
           width:  $tablet_portrait_size/3 - $margin_space;
       }
+    }
 }
 .container .two-third.columns{
   width: ($full_width/3)*2 - $margin_space;
+  @if $responsive {
       @include respond-to(phone_portrait) { 
           width: #{$phone_portrait_col};
       }
@@ -85,12 +98,15 @@ $phone_portrait_col:300px;
       @include respond-to(tablet_portrait) {
           width:  ($tablet_portrait_size/3)*2 - $margin_space;
       }
+    }
 }
 
 @for $i from 1 through $cols {
 	$col_width: $full_width/$cols*$i  -  $margin_space;
   .container .span-#{$i}.columns {
   		width: #{$col_width};
+
+      @if $responsive{
   		@include respond-to(phone_portrait) { 
           width: #{$phone_portrait_col};
   		}
@@ -101,5 +117,6 @@ $phone_portrait_col:300px;
   				$col_width: $tablet_portrait_size/$cols*$i  -  $margin_space;
   			  width: #{$col_width};
   		}
+    }
   }
 }
