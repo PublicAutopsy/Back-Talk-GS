@@ -1,29 +1,5 @@
-/**!  BackTalk Grid System
+/*    BackTalk Grid System
 *     by Cody Byrnes
-*
-*/
-/*
-* Usage:
-* <div class="container"> //Required
-* 	<div class="span-1 columns"> //Defines the amount of columns to span across
-*	</div>
-*</div>
-*
-*
-* Grid unit syntax:
-* .span-"Number of Column units to span"
-* e.g. .span-1 for a single Column unit
-*
-*
-* Customization:
-* $full_width:   //Changes the total width of the container
-* 			         //and determines the size of the columns
-*
-* $margin_space: //Changes the total margin space 
-*					       //of both sides of the grid units
-*
-* $cols          //Determines the number of columns 
-*
 */
 .container {
   width: 960px;
