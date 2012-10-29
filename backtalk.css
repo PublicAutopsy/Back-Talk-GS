@@ -1,9 +1,8 @@
 /**!  BackTalk Grid System
 *     by Cody Byrnes
 *
-*
-*======================================================================
-*
+*/
+/*
 * Usage:
 * <div class="container"> //Required
 * 	<div class="span-1 columns"> //Defines the amount of columns to span across
@@ -27,18 +26,18 @@
 *
 */
 .container {
-  width: 1024px;
+  width: 960px;
   margin: auto; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 960px) {
     .container {
-      widows: 1024px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      widows: 960px; } }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container {
       width: 768px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container {
       width: 480px; } }
-  @media only screen and (max-width: 479px) {
+  @media only screen and (max-width: 480px -1) {
     .container {
       width: 320px; } }
 
@@ -50,208 +49,208 @@
       float: none;
       margin: auto; } }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 960px) {
   .alpha {
     margin: 0px 20px 0px 0px !important; } }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 959px) {
   .alpha {
     margin: 0px 20px 0px 0px !important; } }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 960px) {
   .omega {
     margin: 0px 0px 0px 20px !important; } }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 959px) {
   .omega {
     margin: 0px 0px 0px 20px !important; } }
 
 .container .span-1.columns {
-  width: 44px; }
-  @media only screen and (max-width: 479px) {
+  width: 40px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-1.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-1.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-1.columns {
       width: 28px; } }
 
 .container .span-2.columns {
-  width: 108px; }
-  @media only screen and (max-width: 479px) {
+  width: 100px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-2.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-2.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-2.columns {
       width: 76px; } }
 
 .container .span-3.columns {
-  width: 172px; }
-  @media only screen and (max-width: 479px) {
+  width: 160px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-3.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-3.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-3.columns {
       width: 124px; } }
 
 .container .span-4.columns {
-  width: 236px; }
-  @media only screen and (max-width: 479px) {
+  width: 220px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-4.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-4.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-4.columns {
       width: 172px; } }
 
 .container .span-5.columns {
-  width: 300px; }
-  @media only screen and (max-width: 479px) {
+  width: 280px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-5.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-5.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-5.columns {
       width: 220px; } }
 
 .container .span-6.columns {
-  width: 364px; }
-  @media only screen and (max-width: 479px) {
+  width: 340px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-6.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-6.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-6.columns {
       width: 268px; } }
 
 .container .span-7.columns {
-  width: 428px; }
-  @media only screen and (max-width: 479px) {
+  width: 400px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-7.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-7.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-7.columns {
       width: 316px; } }
 
 .container .span-8.columns {
-  width: 492px; }
-  @media only screen and (max-width: 479px) {
+  width: 460px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-8.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-8.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-8.columns {
       width: 364px; } }
 
 .container .span-9.columns {
-  width: 556px; }
-  @media only screen and (max-width: 479px) {
+  width: 520px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-9.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-9.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-9.columns {
       width: 412px; } }
 
 .container .span-10.columns {
-  width: 620px; }
-  @media only screen and (max-width: 479px) {
+  width: 580px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-10.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-10.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-10.columns {
       width: 460px; } }
 
 .container .span-11.columns {
-  width: 684px; }
-  @media only screen and (max-width: 479px) {
+  width: 640px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-11.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-11.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-11.columns {
       width: 508px; } }
 
 .container .span-12.columns {
-  width: 748px; }
-  @media only screen and (max-width: 479px) {
+  width: 700px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-12.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-12.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-12.columns {
       width: 556px; } }
 
 .container .span-13.columns {
-  width: 812px; }
-  @media only screen and (max-width: 479px) {
+  width: 760px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-13.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-13.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-13.columns {
       width: 604px; } }
 
 .container .span-14.columns {
-  width: 876px; }
-  @media only screen and (max-width: 479px) {
+  width: 820px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-14.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-14.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-14.columns {
       width: 652px; } }
 
 .container .span-15.columns {
-  width: 940px; }
-  @media only screen and (max-width: 479px) {
+  width: 880px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-15.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-15.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-15.columns {
       width: 700px; } }
 
 .container .span-16.columns {
-  width: 1004px; }
-  @media only screen and (max-width: 479px) {
+  width: 940px; }
+  @media only screen and (max-width: 480px -1) {
     .container .span-16.columns {
       width: 300px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container .span-16.columns {
       width: 420px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container .span-16.columns {
       width: 748px; } }

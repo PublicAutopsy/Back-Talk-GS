@@ -1,9 +1,8 @@
 /**!  BackTalk Grid System
 *     by Cody Byrnes
 *
-*
-*======================================================================
-*
+*/
+/*
 * Usage:
 * <div class="container"> //Required
 * 	<div class="span-1 columns"> //Defines the amount of columns to span across
@@ -26,9 +25,14 @@
 * $cols          //Determines the number of columns 
 *
 */ 
-$full_width:1024px;
+$full_width:960px;
 $margin_space:20;
 $cols:16;
+//Breakpoint Definitions 
+$tablet_portrait_size:768px;
+$all_mobile_size: $tablet_portrait_size - 1;
+$phone_landscape_size:480px;
+$phone_portrait_size: $phone_landscape_size -1;
 
 
 //Sets the margin space for each Side of the columns unit 
@@ -40,16 +44,16 @@ $cols:16;
 //Media calls made as a mixin
 @mixin respond-to($media) {
   @if $media == phone_portrait {
-    @media only screen and (max-width: 479px) { @content; }
+    @media only screen and (max-width: $phone_portrait_size) { @content; }
   }
   @else if $media == phone_landscape {
-    @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
+    @media only screen and (min-width: $phone_landscape_size) and (max-width: $all_mobile_size) { @content; }
   }
   @else if $media == all_mobile {
-    @media only screen and (max-width: 767px) { @content; }
+    @media only screen and (max-width: $all_mobile_size) { @content; }
   }
   @else if $media == tablet_portrait {
-    @media only screen and (min-width: 768px) and (max-width: $full_width - 1) { @content; }
+    @media only screen and (min-width: $tablet_portrait_size) and (max-width: $full_width - 1) { @content; }
   }
   @else if $media == desktop {
     @media only screen and (min-width: $full_width) { @content; }
