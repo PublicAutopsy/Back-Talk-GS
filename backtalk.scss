@@ -61,6 +61,32 @@ $phone_portrait_col:300px;
 	@include respond-to(desktop){margin-left: #{$margin_space}px !important;}
 	@include respond-to(tablet_portrait){margin-left:#{$margin_space}px !important;}
 }
+
+.container .one-third.columns{
+  width: $full_width/3 - $margin_space;
+      @include respond-to(phone_portrait) { 
+          width: #{$phone_portrait_col};
+      }
+      @include respond-to(phone_landscape) { 
+           width: #{$phone_landscape_col};
+      }
+      @include respond-to(tablet_portrait) {
+          width:  $tablet_portrait_size/3 - $margin_space;
+      }
+}
+.container .two-third.columns{
+  width: ($full_width/3)*2 - $margin_space;
+      @include respond-to(phone_portrait) { 
+          width: #{$phone_portrait_col};
+      }
+      @include respond-to(phone_landscape) { 
+           width: #{$phone_landscape_col};
+      }
+      @include respond-to(tablet_portrait) {
+          width:  ($tablet_portrait_size/3)*2 - $margin_space;
+      }
+}
+
 @for $i from 1 through $cols {
 	$col_width: $full_width/$cols*$i  -  $margin_space;
   .container .span-#{$i}.columns {

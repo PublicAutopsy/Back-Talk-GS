@@ -41,6 +41,30 @@
   .omega {
     margin-left: 20px !important; } }
 
+.container .one-third.columns {
+  width: 300px; }
+  @media only screen and (max-width: 479px) {
+    .container .one-third.columns {
+      width: 300px; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container .one-third.columns {
+      width: 420px; } }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container .one-third.columns {
+      width: 236px; } }
+
+.container .two-third.columns {
+  width: 620px; }
+  @media only screen and (max-width: 479px) {
+    .container .two-third.columns {
+      width: 300px; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container .two-third.columns {
+      width: 420px; } }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container .two-third.columns {
+      width: 492px; } }
+
 .container .span-1.columns {
   width: 40px; }
   @media only screen and (max-width: 479px) {
