@@ -26,7 +26,7 @@
 * $cols          //Determines the number of columns 
 *
 */ 
-$full_width:960px;
+$full_width:1024px;
 $margin_space:20;
 $cols:16;
 
@@ -49,10 +49,10 @@ $cols:16;
     @media only screen and (max-width: 767px) { @content; }
   }
   @else if $media == tablet_portrait {
-    @media only screen and (min-width: 768px) and (max-width: 959px) { @content; }
+    @media only screen and (min-width: 768px) and (max-width: $full_width - 1) { @content; }
   }
   @else if $media == desktop {
-    @media only screen and (min-width: 960px) { @content; }
+    @media only screen and (min-width: $full_width) { @content; }
   }
 }
 
