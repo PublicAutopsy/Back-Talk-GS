@@ -32,7 +32,7 @@ $cols:16;
 $tablet_portrait_size:768px;
 $all_mobile_size: $tablet_portrait_size - 1;
 $phone_landscape_size:480px;
-$phone_portrait_size: $phone_landscape_size -1;
+$phone_portrait_size: $phone_landscape_size - 1;
 //Mobile Columns Sizes 
 $phone_landscape_col:420px;
 $phone_portrait_col:300px;
@@ -40,8 +40,8 @@ $phone_portrait_col:300px;
 
 //Sets the margin space for each Side of the columns unit 
 @mixin margins{
-	$margin: 0px #{$margin_space/2}px 0px #{$margin_space/2}px;
-	margin:$margin;
+	margin-left:#{$margin_space/2}px;
+  margin-right:#{$margin_space/2}px;
 }
 
 //Media calls made as a mixin
@@ -73,31 +73,31 @@ $phone_portrait_col:300px;
 }
 .columns{
 	@include margins;
-	@include respond-to(all_mobile){float:none;margin:auto;}
+	@include respond-to(all_mobile){float:none;margin-left:auto;margin-right:auto;}
 	float:left;
 }
 .alpha{
-	@include respond-to(desktop){margin: 0px #{$margin_space}px 0px 0px !important;}
-	@include respond-to(tablet_portrait){margin: 0px #{$margin_space}px 0px 0px !important;}
+	@include respond-to(desktop){margin-right:#{$margin_space}px !important;}
+	@include respond-to(tablet_portrait){margin-right: #{$margin_space}px !important;}
 }
 .omega{
 	
-	@include respond-to(desktop){margin: 0px 0px 0px #{$margin_space}px !important;}
-	@include respond-to(tablet_portrait){margin: 0px 0px 0px #{$margin_space}px !important;}
+	@include respond-to(desktop){margin-left: #{$margin_space}px !important;}
+	@include respond-to(tablet_portrait){margin-left:#{$margin_space}px !important;}
 }
 @for $i from 1 through $cols {
 	$col_width: $full_width/$cols*$i  -  $margin_space;
   .container .span-#{$i}.columns {
   		width: #{$col_width};
   		@include respond-to(phone_portrait) { 
-          width: #{$phone_landscape_col};
+          width: #{$phone_portrait_col};
   		}
   		@include respond-to(phone_landscape) { 
            width: #{$phone_landscape_col};
   		}
   		@include respond-to(tablet_portrait) {
-  				$col_width: 768/$cols*$i  -  $margin_space;
-  			  width: #{$col_width}px;
+  				$col_width: $tablet_portrait_size/$cols*$i  -  $margin_space;
+  			  width: #{$col_width};
   		}
   }
 }
