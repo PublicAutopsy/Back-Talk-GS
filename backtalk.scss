@@ -33,6 +33,9 @@ $tablet_portrait_size:768px;
 $all_mobile_size: $tablet_portrait_size - 1;
 $phone_landscape_size:480px;
 $phone_portrait_size: $phone_landscape_size -1;
+//Mobile Columns Sizes 
+$phone_landscape_col:420px;
+$phone_portrait_col:300px;
 
 
 //Sets the margin space for each Side of the columns unit 
@@ -64,8 +67,8 @@ $phone_portrait_size: $phone_landscape_size -1;
 	width:$full_width;
 	margin:auto;
 	@include respond-to(desktop) {widows: #{$full_width}}
-	@include respond-to(tablet_portrait) {width: 768px;}
-	@include respond-to(phone_landscape) {width: 480px;}
+	@include respond-to(tablet_portrait) {width: #{$tablet_portrait_size}}
+	@include respond-to(phone_landscape) {width: #{$phone_landscape_size}}
 	@include respond-to(phone_portrait) {width: 320px;}
 }
 .columns{
@@ -87,10 +90,10 @@ $phone_portrait_size: $phone_landscape_size -1;
   .container .span-#{$i}.columns {
   		width: #{$col_width};
   		@include respond-to(phone_portrait) { 
-          width: 300px;
+          width: #{$phone_landscape_col};
   		}
   		@include respond-to(phone_landscape) { 
-           width: 420px;
+           width: #{$phone_landscape_col};
   		}
   		@include respond-to(tablet_portrait) {
   				$col_width: 768/$cols*$i  -  $margin_space;
