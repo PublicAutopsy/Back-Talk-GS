@@ -44,7 +44,7 @@ $responsive: true !default;
 	width:$full_width;
 	margin:auto;
   @if $responsive {
-	@include respond-to(desktop) {widows: #{$full_width}}
+	@include respond-to(desktop) {width: #{$full_width}}
 	@include respond-to(tablet_portrait) {width: #{$tablet_portrait_size}}
 	@include respond-to(phone_landscape) {width: #{$phone_landscape_size}}
 	@include respond-to(phone_portrait) {width: 320px;}
